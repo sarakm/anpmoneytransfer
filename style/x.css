@@ -1,0 +1,77 @@
+body {
+background-color: #999999;
+font-size:12px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+div#wrapper {
+width: 80%;
+background-color:#FFFFFF;
+margin-top: 0px;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px;
+border: thin solid #000000;
+}
+div#header {
+padding: 15px;
+margin: 0px;
+text-align: center;
+}
+div#nav {
+width: 25%;
+padding: 10px;
+margin-top: 1px;
+float: left;
+}
+div#main {
+margin-left: 30%;
+margin-top: 1px;
+padding: 10px;
+}
+div#footer {
+padding: 15px;
+margin: 0px;
+border-top: thin solid #000000;
+}
+
+
+/*3. Create the side navigation menu - to build the left side navigation I use the normal CSS code for the different links ie*/
+
+a:link {
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+color: #FF0000;
+}
+a:active {
+text-decoration: none;
+}
+
+/*If links are placed elsewhere on the page they will inherit the same properties as above..a blue link that hovers to red.
+
+What if you wish to create another set of different colored links that change color and are underlined when your mouse passes over them?
+
+4. Create the bottom navigation - to include the navigation in the <div id="footer"> section of the page, I use div#footer and code each link accordingly. To make the list go horizontally I use: display: inline;*/
+
+div#footer ul li{
+color : #000000;
+background-color : transparent;
+display: inline;
+}
+
+div#footer ul li a{
+color : #115EAC;
+background-color : transparent;
+text-decoration : none;
+}
+
+div#footer ul li a:hover{
+/*text-decoration : underline;*/
+}@charset "utf-8";
+/* CSS Document */
+

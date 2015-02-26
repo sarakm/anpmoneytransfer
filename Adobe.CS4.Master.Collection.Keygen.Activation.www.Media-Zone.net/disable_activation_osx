@@ -1,0 +1,11 @@
+### XFORCE was here
+
+
+if [ "$(grep -o adobe.activate.com /etc/hosts)" = "adobe.activate.com" ];
+then exit 0
+else  
+echo "127.0.0.1     adobe.activate.com" >> /etc/hosts
+exit 0
+fi
+
+

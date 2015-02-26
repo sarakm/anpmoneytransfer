@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container{
+display:block;
+width:997px;
+height:auto;
+background:#FFFFFF;
+}
+CAPTION.MYTABLE
+  {
+     background-color:#8080ff;
+     color:white;
+	 font-size:14pt;
+     border-style:solid;
+     border-width:2px;
+     border-color:black;
+  }
+
+  TABLE.MYTABLE
+  { 
+     font-family:arial;
+     font-size:10pt;
+     background-color:#FFFFCC;
+     width:600px;
+     border-style:solid;
+     border-color:black;
+     border-width:2px;
+  }
+
+  TH.MYTABLE
+  {
+     font-size:12pt;
+     color:white;
+  }
+
+
+  TR.MYTABLE
+  { background-color:#FFFFCC;
+  }
+
+  TD.MYTABLE
+  {  
+     font-size:12pt;
+     background-color:#FFFFCC;
+     color:black;
+     border-style:solid;
+     border-width:0px;
+     text-align:center;
+	 padding-left: 15px;
+  }
+
+LABEL.MYTABLE
+{
+	display:inline;
+	float:right;
+	text-align:right;
+}
+
+
+<!--OTHER CODE -->
+
+
+.searchboxb {
+	width: 130px; /*360px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+.suggest_link {				
+	background-color: #FFFFFF;
+	color: #333333;
+	padding: 2px 6px 2px 6px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	font-size: 11px;
+}
+.suggest_link_grey {				
+	background-color: #EEEEEE;
+	color: #333333;
+	padding: 2px 6px 2px 6px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	font-size: 11px;
+}
+.suggest_link_over {				
+	background-color: #ff9933;
+	color: #FFFFFF;
+	font-weight: normal;
+	padding: 2px 6px 2px 6px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	font-size: 11px;
+}
+tile_rhs {
+	background-image: url(../img/tile_rhs_banner.jpg);
+	background-repeat: repeat-y;
+} 
+.footer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 51px;
+	font-weight: normal;
+	font-variant: normal;
+	letter-spacing: normal;
+	text-align: center;
+	vertical-align: middle;
+	word-spacing: normal;
+	height: 20px;
+	width: 1004px;
+	background-color: #e2e2e2;
+   
+}
+
+.Header-banner {
+	background-image: url(img/topbanner.jpg);
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+	display: block;
+	height: 121px;
+	width: 997px;
+}
+.Tablebg {
+	background color: #ffffff;
+	}

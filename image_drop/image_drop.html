@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> ANP MONEY TRANSFER</title>
+
+
+<style type="text/css">
+
+#multi-level {height:35px; position:relative; z-index:100; background:#fff url(image_drop_back.gif) repeat-x; padding-left:20px;border:1px solid #000; border-width:0 1px;}
+
+/* The menu styling */
+/* Remove the padding, margins and bullets from the lists */
+
+.menu, .menu ul {list-style-type:none; padding:0; margin:0; font-family:arial, sans-serif; font-size:16px;}
+
+/* Set up the size of the list items and float left to place inline */
+.menu li.top {display:block; float:left; position:relative;}
+
+/* Style and position the table so it takes no part in the menu function. The font size is necessary for IE5.5 */
+.menu table {border-collapse:collapse; width:0; height:0; position:absolute; top:0; left:0;}
+
+/* Default link styling */
+.menu li.top a.top_link {display:block; float:left; height:35px; line-height:35px; text-decoration:none; color:#fff; padding:0;}
+.menu li.top a.top_link span.span_top {display:block; float:left; height:35px; padding:0 15px 0 0;}
+.menu li.top a.top_link b.b_top {display:block; float:left; height:35px; width:26px;}
+
+.menu li.top a.top_link span.drop {background: url(image_drop_0a.gif) right top; padding:0 25px 0 0;}
+
+.menu li a#moneytransfer b.b_top {background:transparent url(home.gif) no-repeat center center;}
+.menu li a#administration b.b_top {background:transparent url(cog.gif) no-repeat center center;}
+.menu li a#Transapprove b.b_top {background:transparent url(monitor.gif) no-repeat center center;}
+.menu li a#reports b.b_top {background:transparent url(links.gif) no-repeat center center;}
+.menu li a#help b.b_top {background:transparent url(book.gif) no-repeat center center;}
+.menu li a#exchange b.b_top {background:transparent url(page.gif) no-repeat center center;}
+.menu li a#privacy b.b_top {background:transparent url(info.gif) no-repeat center center;}
+.menu li a#logout b.b_top {background:transparent url(key.gif) no-repeat center center;}
+
+/* Style the list OR link hover. Depends on which browser is used */
+.menu a:hover {visibility:visible; cursor:pointer; position:relative;}
+.menu li:hover {position:relative; z-index:200;}
+
+/* Style the top level links */
+.menu li.top a.top_link:hover,
+.menu li.top:hover a.top_link {background: url(image_drop_0b.gif);}
+.menu li.top a.top_link:hover span.span_top,
+.menu li.top:hover a.top_link span.span_top {background: url(image_drop_1a.gif) right top;}
+.menu li.top a.top_link:hover span.drop,
+.menu li.top:hover a.top_link span.drop {background: url(image_drop_0b.gif) right top;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+.menu ul, 
+.menu ul ul, 
+.menu :hover ul :hover ul ul,
+.menu :hover ul :hover ul :hover ul ul,
+.menu :hover ul :hover ul :hover ul :hover ul ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0;}
+
+/* Style the drop down sub level links */
+.menu :hover ul.sub {left:0; top:25px; background: transparent url(transparent.gif); padding:3px 0 0 0; white-space:nowrap; width:165px; height:auto;}
+.menu :hover ul.sub li {display:block; float:left;}
+.menu :hover ul.sub li a {display:block; float:left; height:25px; width:265px; line-height:25px; color:#000; text-decoration:none; padding:0; background: url(dropa_0.gif) no-repeat;}
+
+/* All this lot is for IE6, believe it or not, to style the fly outs */
+.menu :hover ul.sub li a span,
+.menu :hover ul.sub li a.fly:hover ul li a span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a span, 
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a span
+{display:block; float:left; background: url(drop_0.gif) right top; height:25px; width:142px; padding:0 10px 0 5px; font-weight:normal; color:#000;}
+
+.menu :hover ul.sub li a.fly span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a.fly span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a.fly span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a.fly span
+{background: url(dropb_0.gif) right top; color:#000;}
+
+.menu :hover ul.sub li a:hover,
+.menu :hover ul.sub li a:hover ul li a:hover,
+.menu :hover ul.sub li a:hover ul li a:hover ul li a:hover,
+.menu :hover ul.sub li a:hover ul li a:hover ul li a:hover ul li a:hover,
+.menu :hover ul.sub li a:hover ul li a:hover ul li a:hover ul li a:hover ul li a:hover
+{background: url(dropba_1.gif) no-repeat; color:#fff;}
+
+.menu :hover ul.sub li a:hover span,
+.menu :hover ul.sub li a.fly:hover ul li a:hover span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a:hover span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a:hover span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a:hover span
+{background: url(drop_1.gif) right top; color:#fff;}
+
+.menu :hover ul.sub li a.fly:hover span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a.fly:hover span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a.fly:hover span,
+.menu :hover ul.sub li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a.fly:hover ul li a.fly:hover span
+{background:url(dropb_1.gif) right top; color:#fff;}
+
+/* the next two lines keep the menu trail :hover state for IE7 and non-IE browsers */
+.menu :hover ul li:hover > a.fly {background:url(dropba_1.gif) no-repeat; color:#fff;}
+.menu :hover ul li:hover > a.fly span {background:url(dropb_1.gif) right top; color:#fff;}
+
+/* Style the images to the left of each link */
+.menu ul.sub b {display:block; float:left; background:transparent url(book.gif) no-repeat center center; height:25px; width:25px;}
+.menu ul.sub b.key {background:transparent url(key.gif) no-repeat center center;}
+.menu ul.sub b.cog {background:transparent url(cog.gif) no-repeat center center;}
+.menu ul.sub b.folder {background:transparent url(folder.gif) no-repeat center center;}
+.menu ul.sub b.monitor {background:transparent url(monitor.gif) no-repeat center center;}
+.menu ul.sub b.paint {background:transparent url(paint.gif) no-repeat center center;}
+.menu ul.sub b.house {background:transparent url(house.gif) no-repeat center center;}
+.menu ul.sub b.people {background:transparent url(people.gif) no-repeat center center;}
+.menu ul.sub b.info {background:transparent url(info.gif) no-repeat center center;}
+.menu ul.sub b.shop {background:transparent url(shop.gif) no-repeat center center;}
+.menu ul.sub b.email {background:transparent url(email.gif) no-repeat center center;}
+.menu ul.sub b.world {background:transparent url(world.gif) no-repeat center center;}
+.menu ul.sub b.text {background:transparent url(text.gif) no-repeat center center;}
+.menu ul.sub b.qmark {background:transparent url(qmark.gif) no-repeat center center;}
+.menu ul.sub b.stop {background:transparent url(stop.gif) no-repeat center center;}
+.menu ul.sub b.edit {background:transparent url(edit.gif) no-repeat center center;}
+
+/* Position the flyouts */
+.menu :hover ul :hover ul,
+.menu :hover ul :hover ul :hover ul,
+.menu :hover ul :hover ul :hover ul :hover ul,
+.menu :hover ul :hover ul :hover ul :hover ul :hover ul
+{left:107px; top:0; background:transparent url(transparent.gif); padding:5px 5px 5px 0; white-space:nowrap; width:120px; z-index:200; height:auto;}
+
+</style>
+
+
+
+
+</head>
+
+
+<body id="ANP">
+
+<div id="multi-level">
+<ul class="menu">
+	<li class="top"><a href="sender.php" id="moneytransfer" class="top_link"><b class="b_top"></b><span class="span_top">Money Transfer</span></a></li>
+	<li class="top"><a href="transacpanel.php" id="administration" class="top_link"><b class="b_top"></b><span class="span_top drop">Administration</span><!--[if IE 7]><!--></a><!--<![endif]-->
+		<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul class="sub">
+			<li><a href="agents.php" class="fly"><b class="key"></b><span class="p1">Agents</span><!--[if IE 7]><!--></a><!--<![endif]-->
+					<!--[if lte IE 6]><table><tr><td><![endif]-->
+					<ul>
+						<li><a href="registerStaff.html"><b class="paint"></b><span>Register Agents</span></a></li>
+						<li><a href="agents.php"><b class="paint"></b><span>Modify Agents</span></a></li>
+						<li><a href="agents.php"><b class="paint"></b><span>Delete Agents</span></a></li>
+					</ul>
+					<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+			</li>
+			<li class="mid"><a href="clients.php" class="fly"><b class="house"></b><span>Clients</span><!--[if IE 7]><!--></a><!--<![endif]-->
+					<!--[if lte IE 6]><table><tr><td><![endif]-->
+					<ul>
+						<li><a href="clients.php"><b class="house"></b><span>Register Clients</span></a></li>
+						<li><a href="clients.php"><b class="house"></b><span>Modify Clients</span></a></li>
+						<li><a href="clients.php"><b class="house"></b><span>Delete Clients</span></a></li>
+						<li><a href="../menu/" class="fly"><b class="house"></b><span>Zoom</span><!--[if IE 7]><!--></a><!--<![endif]-->
+							<!--[if lte IE 6]><table><tr><td><![endif]-->
+							<ul>
+								<li><a href="../mozilla/"><b class="people"></b><span>35mm to 125mm</span></a></li>
+								<li><a href="../opacity/"><b class="people"></b><span>50mm to 250mm</span></a></li>
+								<li><a href="../menu/"><b class="people"></b><span>125mm to 500mm</span></a></li>
+							</ul>
+							<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+						</li>
+						<li><a href="../boxes/"><b class="house"></b><span>Mirror</span></a></li>
+						<li><a href="../opacity/" class="fly"><b class="house"></b><span>Non standard</span><!--[if IE 7]><!--></a><!--<![endif]-->
+							<!--[if lte IE 6]><table><tr><td><![endif]-->
+							<ul>
+								<li><a href="../mozilla/"><b></b><span>Bayonet mount</span></a></li>
+								<li><a href="../opacity/"><b></b><span>Screw mount</span></a></li>
+							</ul>
+							<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+						</li>
+					</ul>
+					<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+			</li>
+			<li><a href="../mozilla/"><b class="finances"></b><span>Finances</span></a></li>
+			<li><a href="../ie/"><b class="ER"></b><span>Exchange Rates</span></a></li>
+		</ul>
+		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="top"><a href="transactions.php" id="Transapprove" class="top_link"><b class="b_top"></b><span class="span_top drop">Transactions Approval</span><!--[if IE 7]><!--></a><!--<![endif]-->
+		<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul class="sub">
+			<li><a href="assign_trans.php"><b class="info"></b><span>Assign Transactions</span></a></li>
+			<li><a href="del_trans.php"><b class="info"></b><span>Delete Transactions</span></a></li>
+			<li><a href="../boxes/"><b class="info"></b><span>Retouching</span></a></li>
+			<li><a href="../mozilla/"><b class="info"></b><span>Archiving</span></a></li>
+		</ul>
+		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="top"><a href="http://www." id="reports" class="top_link"><b class="b_top"></b><span class="span_top drop">Reports</span><!--[if IE 7]><!--></a><!--<![endif]-->
+		<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul class="sub">
+			<li><a href="email_agents.php"><b class="email"></b><span>Email Agents</span></a></li>
+			<li><a href="email_clients.php" class="fly"><b class="world"></b><span>Email Clients</span><!--[if IE 7]><!--></a><!--<![endif]-->
+				<!--[if lte IE 6]><table><tr><td><![endif]-->
+				<ul>
+					<li><a href="../mozilla/"><b class="info"></b><span>USA</span></a></li>
+					<li><a href="../ie/"><b class="info"></b><span>Canadian</span></a></li>
+					<li><a href="../opacity/"><b class="info"></b><span>South American</span></a></li>
+					<li><a href="../menu/" class="fly"><b class="info"></b><span>European</span><!--[if IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul>
+							<li><a href="../mozilla/" class="fly"><b class="text"></b><span>British</span><!--[if IE 7]><!--></a><!--<![endif]-->
+								<!--[if lte IE 6]><table><tr><td><![endif]-->
+								<ul>
+									<li><a href="../ie/"><b class="qmark"></b><span>London</span></a></li>
+									<li><a href="../menu/"><b class="qmark"></b><span>Liverpool</span></a></li>
+									<li><a href="../boxes/"><b class="qmark"></b><span>Glasgow</span></a></li>
+									<li><a href="../opacity/" class="fly"><b class="edit"></b><span>Bristol</span><!--[if IE 7]><!--></a><!--<![endif]-->
+										<!--[if lte IE 6]><table><tr><td><![endif]-->
+										<ul>
+											<li><a href="../ie/"><b class="stop"></b><span>Redland</span></a></li>
+											<li><a href="../opacity/"><b class="stop"></b><span>Hanham</span></a></li>
+											<li><a href="../menu/"><b class="stop"></b><span>Eastville</span></a></li>
+										</ul>
+										<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+									</li>
+									<li><a href="../layouts/"><b class="qmark"></b><span>Cardiff</span></a></li>
+									<li><a href="../mozilla/"><b class="qmark"></b><span>Belfast</span></a></li>
+								</ul>
+								<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+							</li>
+							<li><a href="../opacity/"><b class="text"></b><span>French</span></a></li>
+							<li><a href="../menu/"><b class="text"></b><span>German</span></a></li>
+							<li><a href="../boxes/"><b class="text"></b><span>Spanish</span></a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+					<li><a href="../boxes/"><b class="info"></b><span>Australian</span></a></li>
+					<li><a href="../boxes/"><b class="info"></b><span>Asian</span></a></li>
+				</ul>
+				<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+			</li>
+			<li><a href="../mozilla/"><b class="email"></b><span>Buying</span></a></li>
+			<li><a href="../ie/"><b class="email"></b><span>Photographers</span></a></li>
+			<li><a href="../opacity/"><b class="email"></b><span>Stockist</span></a></li>
+			<li><a href="../menu/"><b class="email"></b><span>General</span></a></li>
+		</ul>
+		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="top"><a href="http://www." id="help" class="top_link"><b class="b_top"></b><span class="span_top drop">Help</span><!--[if IE 7]><!--></a><!--<![endif]-->
+		<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<ul class="sub">
+			<li><a href="../ie/"><b class="shop"></b><span>Online</span></a></li>
+			<li><a href="../opacity/"><b class="shop"></b><span>Catalogue</span></a></li>
+			<li><a href="../menu/"><b class="shop"></b><span>Mail Order</span></a></li>
+		</ul>
+		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+	</li>
+	<li class="top"><a href="http://www." id="exchange" class="top_link"><b class="b_top"></b><span class="span_top">Exchange Rate Display</span></a></li>
+    <li class="top"><a href="http://www." id="privacy" class="top_link"><b class="b_top"></b><span class="span_top">Privacy Policy</span></a></li>
+    <li class="top" style="float:right"><a href="http://www." id="logout" class="top_link"><b class="b_top"></b><span class="span_top">Logout</span></a></li>
+</ul>
+</div>
+
+
+
+</body>
+</html>

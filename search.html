@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ANP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="author" content="" />
+<meta name="description" content="Money Transfer in toronto canada" />
+<meta name="keywords" content=" toronto,canada" />
+<script language="JavaScript" type="text/javascript" src="ajax_suggest.js"></script>
+<title>sender info</title>
+<link href='style/style.css' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+<FORM METHOD="POST" ACTION="custsearch.php"> 
+<TABLE CLASS="MYTABLE">
+<CAPTION CLASS="MYTABLE">SEARCH CUSTOMER</CAPTION>
+
+   <TR CLASS="MYTABLE">
+            
+    <TD CLASS="MYTABLE"><center><label>CustId</label></center></TD>
+    <TD CLASS="MYTABLE">&nbsp;&nbsp;</TD>
+    <TD CLASS="MYTABLE">
+        <center><label>First Name</label></center></TD>
+    <TD CLASS="MYTABLE">
+        <center><label>Middle Name</label></center></TD>
+    <TD CLASS="MYTABLE">
+        <center><label>Last Name</label></center></TD>
+    <TD CLASS="MYTABLE">
+         &nbsp;&nbsp;  </TD>
+    <TD CLASS="MYTABLE">
+        <center><label>Phone</label></center></TD>    
+  </TR>
+  <TR CLASS="MYTABLE" valign="bottom">
+    <TD CLASS="MYTABLE">
+    <input type="text" name="custId" id="custId" value=""/>    </TD> 
+    <TD CLASS="MYTABLE">&nbsp;&nbsp;  </TD>
+    <TD CLASS="MYTABLE">
+    <input type="text" name="firstname" id="firstname" value=""  onkeyup="searchSuggest(this.id)" autocomplete="off"/> </TD>
+    <TD CLASS="MYTABLE">
+    <input type="text" name="middlename" id="middlename" value=""/></TD>
+    <TD CLASS="MYTABLE">
+    <input type="text" name="lastname" id="lastname" value="" onkeyup="searchSuggest(this.id)" autocomplete="off"/></TD>
+    <TD CLASS="MYTABLE">&nbsp;&nbsp;  </TD>
+    <TD CLASS="MYTABLE">
+    <input type="text" name="phone" id="phone" value=""/></TD>
+    <TD CLASS="MYTABLE">&nbsp;&nbsp; </TD>
+    <TD CLASS="MYTABLE"><a href="register.html"><IMG ALT="NEW USER" src="/ANP/img/button.png"ANP/img/button.png" border="none" onclick="register.html"/></a></TD>
+  </TR>
+ <TR CLASS="MYTABLE" VALIGN="top">
+  <TD CLASS="MYTABLE"></TD> 
+    <TD CLASS="MYTABLE">&nbsp;&nbsp;  </TD>
+  <TD CLASS="MYTABLE"><div id="firstname_suggest" style="position:absolute; z-index:2; text-align:left; width:143px; background-color:#FFFFFF; display:none; border:solid 1px #333333;"></div></TD>
+  <TD CLASS="MYTABLE"></TD> 
+  <TD CLASS="MYTABLE"><div id="lastname_suggest" style="position:absolute; z-index:2;  text-align:left; width:143px; background-color:#FFFFFF; display:none; border:solid 1px #333333;"></div></TD>
+  </TR>
+  
+  
+  <TR CLASS="MYTABLE">
+    <TD CLASS="MYTABLE"><center></center></TD>
+    <TD CLASS="MYTABLE"></TD>
+    <TD CLASS="MYTABLE"></TD>
+    <TD CLASS="MYTABLE"><center><input type="SUBMIT" name="search" id="search" value="SEARCH"/></center></TD>
+    <TD CLASS="MYTABLE"></TD>
+    <TD CLASS="MYTABLE"></TD>
+    <TD CLASS="MYTABLE"><center></center></TD>
+  </TR>
+  <TR CLASS="MYTABLE"></TR>
+</TABLE>
+</FORM>
+
+</body>
+</html>

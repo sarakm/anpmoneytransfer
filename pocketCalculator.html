@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML lang="en">
+<HEAD>
+<TITLE>JavaScript - Advanced Calculator</TITLE>
+</HEAD>
+
+<BODY>
+<BODY>
+<SCRIPT TYPE="text/javascript" Language="JavaScript">
+
+function compute() {
+   if (document.evalform.honoff.value=='off') return;
+   document.evalform.result.value = eval(document.evalform.expr.value)
+   qwqw = document.evalform.result.value
+   for (var i = 3; i < 14; i++) {	
+	document.images[i].src = "dgbl.gif"
+   }  
+
+   for (var i = 0; i <= qwqw.length-1; i++) {	
+	var del = qwqw.substring(i, i+1);
+	if (del=='.'){
+		del='p2';
+	}
+	else if (del=='-'){
+		del='min';
+	}
+	else if((del=='0') || (del == '1') || (del == '2')|| (del == '3')|| (del == '4')|| (del == '5')|| (del == '6')|| (del == '7')|| (del == '8')|| (del == '9')){
+	}
+	else {
+		del = 'bl';
+	}
+
+	var nr = i+3
+	if (nr > 13) {
+		return;
+	}
+	document.images[nr].src = "dg" + del + ".gif"
+   }  
+
+}
+
+function visa(n) {
+   if (document.evalform.honoff.value=='off') return;
+   var s=0;//STOP if operator
+   document.evalform.expr.value = document.evalform.expr.value + n
+   qwqw = document.evalform.expr.value
+   if (document.evalform.help.value=='t'){
+	for (var i = 3; i < 14; i++) {	
+		document.images[i].src = "dgbl.gif"
+	}  
+	document.evalform.help.value=''
+   }
+
+   for (var i = 0; i <= qwqw.length-1; i++) {	
+	var del = qwqw.substring(i, i+1);
+   }
+	
+	s=0
+	if((del=='+') || (del == '-') || (del == '*')|| (del == '/')|| (del == '(')|| (del == ')')){
+		document.evalform.help.value='t'
+		document.evalform.pos.value='2'
+		var s=1;
+	}
+
+
+	if (del=='.'){
+		del='p2';
+	}
+	else if (del=='-'){
+		del='min';
+	}
+	else if((del=='0') || (del == '1') || (del == '2')|| (del == '3')|| (del == '4')|| (del == '5')|| (del == '6')|| (del == '7')|| (del == '8')|| (del == '9')){
+		del=del;
+	}
+	else {
+		del = 'bl';
+	}
+
+	var nr = document.evalform.pos.value;
+	if (nr > 13) {
+		return;
+	}
+	if (s == 0) document.images[nr].src = "dg" + del + ".gif"
+	document.evalform.pos.value=parseInt(document.evalform.pos.value)+1;
+
+
+}
+function clear() {
+   if (document.evalform.honoff.value=='off') return;
+   document.evalform.expr.value = '';
+   document.evalform.result.value = '';
+   document.evalform.pos.value = '3';
+   for (var i = 3; i < 14; i++) {	
+	document.images[i].src = "dgbl.gif"
+   }  
+   
+}
+
+function onoff() {
+   if (document.evalform.honoff.value=='off'){
+   	for (var i = 3; i < 14; i++) {	
+		document.images[i].src = "dgbl.gif"
+   	}  
+	document.evalform.honoff.value='on'
+   }
+   else{
+   	for (var i = 3; i < 14; i++) {	
+		document.images[i].src = "calcbl.gif"
+   	}  
+	document.evalform.honoff.value='off'
+   }
+
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+
+<IMG src="line2.gif" width=155 height=5><BR>
+<IMG src="left.gif" width=11 height=15><img src="calcbl.gif" width=12 height=15><img src="calcbl.gif" width=12 height=15><img src="calcbl.gif" width=12 height=15><img src="calcbl.gif" width=12 height=15><img src="calcbl.gif" width=12 height=15><img src="calcbl.gif" width=12 height=15><img src="calcbl.gif" width=12 height=15><img src="calcbl.gif" width=12 height=15><img src="calcbl.gif" width=12 height=15><img src="calcbl.gif" width=12 height=15><img src="calcbl.gif" width=12 height=15><img src="right.gif" width=12 height=15><BR><img src=line.gif width=155 height=5><Br>
+<IMG alt="Calculator" src="main.gif" width=155 height=138 usemap="#Calc" border=0>
+
+<MAP NAME="Calc">
+<AREA SHAPE="rect" COORDS="4,6,36,22" HREF="JavaScript:onoff()">
+<AREA SHAPE="rect" COORDS="43,6,73,22" HREF="JavaScript:visa('(')">
+<AREA SHAPE="rect" COORDS="80,6,112,22" HREF="JavaScript:visa(')')">
+<AREA SHAPE="rect" COORDS="119,6,151,22" HREF="JavaScript:visa('/')">
+<AREA SHAPE="rect" COORDS="4,32,36,48" HREF="JavaScript:visa('7')">
+<AREA SHAPE="rect" COORDS="43,32,73,48" HREF="JavaScript:visa('8')">
+<AREA SHAPE="rect" COORDS="82,32,112,48" HREF="JavaScript:visa('9')">
+<AREA SHAPE="rect" COORDS="119,32,151,48" HREF="JavaScript:visa('*')">
+<AREA SHAPE="rect" COORDS="4,59,36,75" HREF="JavaScript:visa('4')">
+<AREA SHAPE="rect" COORDS="43,59,73,75" HREF="JavaScript:visa('5')">
+<AREA SHAPE="rect" COORDS="82,59,112,75" HREF="JavaScript:visa('6')">
+<AREA SHAPE="rect" COORDS="119,59,151,75" HREF="JavaScript:visa('-')">
+<AREA SHAPE="rect" COORDS="4,85,36,102" HREF="JavaScript:visa('1')">
+<AREA SHAPE="rect" COORDS="43,85,73,102" HREF="JavaScript:visa('2')">
+<AREA SHAPE="rect" COORDS="82,85,112,102" HREF="JavaScript:visa('3')">
+<AREA SHAPE="rect" COORDS="119,85,151,102" HREF="JavaScript:visa('+')">
+
+<AREA SHAPE="rect" COORDS="4,110,36,127" HREF="JavaScript:visa('0')">
+<AREA SHAPE="rect" COORDS="43,110,73,127" HREF="JavaScript:visa('.')">
+<AREA SHAPE="rect" COORDS="82,110,112,127" HREF="JavaScript:clear()">
+<AREA SHAPE="rect" COORDS="119,110,151,127" HREF="JavaScript:compute()">
+</MAP>
+<P>
+<FORM NAME="evalform">
+<TABLE>
+<TR><TD>Enter an expression:</TD><td> <INPUT TYPE=text NAME="expr" SIZE=23></td></TR>
+<TR><TD>Result</TD><td><INPUT TYPE=text NAME="result" SIZE=23></td></TR>
+</TABLE>
+<input type=hidden name=helP>
+<input type=hidden name=pos value=3>
+<input type=hidden name=honoff value='off'>
+
+<!--Check this out:  http://www.irt.org/articles/js069/main.gif (sent by Yahoo! Toolbar)-->
+</FORM>
+</BODY>
+</HTML>
+
+
+

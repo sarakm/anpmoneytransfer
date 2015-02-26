@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="/ANP/style/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table width="609"  border="1" align="center"  cellpadding="0" cellspacing="0" class="receipt">
+  <tr>
+    <td><!-- ***********beneficiary*********************-->
+        <!-- <table><tr><td>  <table id="left1" width="64" height="182" border="2" align="left"  cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="115">&nbsp;</td>
+        <td width="331"></td>
+      </tr>
+      <tr class="h4" width="600">
+        <td >BENEFICIARY</td>
+        <td >&nbsp;</td>
+      </tr>
+    </table></td></tr>-->
+        <!-- ***********beneficiary*********************-->
+        <table width="340" border="2" align="left" cellpadding="0" cellspacing="0" id="left2">
+          <tr width="340">
+            <td width="92" ><label for='rf_name'>FIRST NAME</label></td>
+            <td width="17" ><?PHP echo $r_fname;?></td>
+            <td width="109"><label for='rm_name'>MIDDLE NAME</label></td>
+            <td width="17"><?PHP echo $r_mname; ?></td>
+          </tr>
+          <tr>
+            <td><label for='rl_name'>LAST NAME</label></td>
+            <td><?PHP echo $r_lname; ?></td>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td colspan="1"><label for='address'>ADDRESS</label></td>
+            <td colspan="3" align="left"><?PHP echo $r_address1; ?></td>
+          </tr>
+          <tr>
+            <td colspan="1"></td>
+            <td colspan="3" align="left"><?PHP echo $r_city; ?>&nbsp;&nbsp;<?PHP echo $r_province; ?>&nbsp;&nbsp;<?PHP echo $r_country; ?>&nbsp;&nbsp;<?PHP echo $r_postalcode; ?></td>
+          </tr>
+          <tr>
+            <td><label for='phone'>TELEPHONE</label></td>
+            <td ><?PHP echo $r_phone; ?></td>
+            <td><label for='id'>ID NO:</label></td>
+            <td ></td>
+          </tr>
+      </table></td>
+  </tr>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <tr>
+    <td><!-- **********************ordering customer******************************************-->
+        <p>&nbsp;</p></td>
+    <table width="340" height="99" border="2" align="left" cellpadding="0" cellspacing="0" id="inner4">
+      <tr width="500">
+        <td width="92"><label for='s_fname'>FIRST NAME</label></td>
+        <td width="17" align="center"><?PHP echo $s_fname; ?></td>
+        <td width="109"><label for='s_fname'>MIDDLE NAME</label></td>
+        <td width="17" align="left" valign="top"><?PHP echo $s_mname; ?></td>
+      </tr>
+      <tr>
+        <td><label for='s_lname'>LAST NAME</label></td>
+        <td colspan="3" align="center"><?PHP echo $s_lname; ?></td>
+      </tr>
+      <tr height="30">
+        <td><label for='address'>ADDRESS</label>
+        </td>
+        <td colspan="3"><?PHP echo $s_address;?>&nbsp;<?PHP echo $s_postalcode;?></td>
+      </tr>
+      <tr>
+        <td><label for='phone'>TELEPHONE</label></td>
+        <td align="center"><?PHP echo $s_phone; ?></td>
+        <td><label for='id'>ID NO:</label></td>
+        <td align="left" valign="top" ><?php echo $sender_id; ?></td>
+      </tr>
+    </table>
+  </tr>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <tr>
+    <td width="1"></td>
+  </tr>
+  <!--******************************* end of ordering customer*************************************************-->
+  <tr>
+    <td height="10" align="left" valign="top"><table width="340" height="48" border="2" align="left"  cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="10"><label for='rate'>EXCHANGE RATE</label></td>
+        <td align="center"><?PHP echo $rate; ?></td>
+        <td><label for='receivableAmt'>RECEIVABLE AMOUNT</label></td>
+        <td  align="center" ><?PHP echo $cur; ?><?PHP echo $cvt; ?></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>
+      <table width="340"  border="1" align="left"  cellpadding="0" cellspacing="0" class="MYTABLE" id="inner5">
+          <tr>
+            <td width="212"> Any discrepancy or shortfall in receipt by beneficial should be reported with in 30 days or the date of Invoice.ANP will not assume any responsibility for any shortfall or discrepancy after that date. </td>
+            <td width="132"><label align="bottom" class="h4">Customer Signature:</label></td>
+          </tr>
+      </table></td>
+    <!--******************************* end of leftside design*************************************************-->
+    <td align="right" valign="top"><table id="rightTD" align="center" vspace="2">
+      <tr>
+        <td align="left" valign="top"></td>
+      </tr>
+      <tr>
+        <td>REFERENCE NUMBER:</td>
+        <td><?php echo $trans_id;?></td>
+      </tr>
+      <tr>
+        <td colspan="2"><table width="184"  border="2" align="center" cellpadding="0" cellspacing="0" >
+          <tr>
+            <td>Date:</td>
+            <td><?php echo $date?></td>
+          </tr>
+          <tr>
+            <td>Time:</td>
+            <td><?php echo $time?></td>
+          </tr>
+          <tr>
+            <td>Amount:($)</td>
+            <td align="right"><?php echo $amt?></td>
+          </tr>
+          <tr>
+            <td>Service Charge:($)</td>
+            <td align="right"><?php echo $fee?></td>
+          </tr>
+          <tr>
+            <td>Total Charge:($)</td>
+            <td align="right"><?php echo $grt?></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="119" colspan="2"><div> ANP Money Transfer Ltd as a money remittance company is committed to maintaining compilance with Canada's new <u>Proceeds of Crime(Money Laundering) and Terrorist Financing Act.</u> As such we are required under that legislation to maintain specific records, gather certain information, and report when required certain information as described in section 7 and 9 of the <u> Act</u> and various Regulations that support the <u> Act</u>.</div></td>
+      </tr>
+      <tr>
+        <td height="34" colspan="2"><table id="rightbottom" width="250" align="left" style="font-weight:bold;">
+          <tr>
+            <td width="189"><lable>
+                <div align="center"></div></td>
+            <td width="49"><div align="center">Accepted By</div></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="119" colspan="2">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="15" align="right" valign="bottom">&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

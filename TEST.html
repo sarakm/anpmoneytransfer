@@ -1,0 +1,76 @@
+<html>
+<head>
+<link href='style.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+<div style="margin-top: 15px; margin-left:20px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; float:left;">
+            <div id="catsuggest" style="width: 250px; margin-top: 25px; position:absolute; display:none; z-index:10; border:solid 1px #333333;"></div>
+            	<form action="viewcategory.php" method="post" style="margin:0; padding:0;">
+
+                    <input type="text" name="category" id="category" style="width:250px;" onkeyup="catSuggest()" autocomplete="off"/>
+                    <input type="submit" value="Submit" style="width:80px;"/>
+            	</form>
+            </div>
+            
+
+<FORM  ACTION="register.php" METHOD="POST">
+  <table class="MYTABLE">
+    <caption class="MYTABLE">
+      REGISTER USER
+    </caption>
+    <tr class="MYTABLE">
+      <td width="88" class="MYTABLE"></td>
+      <td width="165" align="right"  class="MYTABLE"><label class="LABEL1">CustId</label></td>
+      <td width="329"><input type="text" name="custId" id="custId" value=""/></td>
+    </tr>
+    <tr class="MYTABLE">
+      <td align="right" class="MYTABLE"></td>
+      <td align="right" class="MYTABLE"><label class="LABEL1">First Name*</label></td>
+      <td align="left"><input type="text" name="firstname" id="firstname" value=""/></td>
+    </tr>
+    <tr class="MYTABLE">
+      <td align="right" class="MYTABLE"></td>
+      <td align="right" class="MYTABLE"><label class="LABEL1">Middle Name</label></td>
+      <td align="left"><input type="text" name="middlename" id="middlename" value=""/></td>
+    </tr>
+    <tr class="MYTABLE">
+      <td align="right" class="MYTABLE"></td>
+      <td align="right" class="MYTABLE"><label class="LABEL1">Last Name*</label></td>
+      <td align="left"><input type="text" name="lastname" id="lastname" value=""/></td>
+    </tr>
+    <tr class="MYTABLE">
+      <td align="right" class="MYTABLE"></td>
+      <td align="right" class="MYTABLE"><label class="LABEL1">Phone1*</label></td>
+      <td align="left"><input type="text" name="phone1" id="phone1" value=""/></td>
+    </tr>
+    <tr class="MYTABLE">
+      <td class="MYTABLE"></td>
+      <td align="right" class="MYTABLE"><label class="LABEL1">Phone2</label></td>
+      <td align="left"><input type="text" name="phone2" id="phone2" value=""/></td>
+    </tr>
+    <tr class="MYTABLE">
+      <td class="MYTABLE"></td>
+      <td align="right" class="MYTABLE"> Email</td>
+      <td><input type="text" name="email" id="email" value=""/></td>
+    </tr>
+    <tr class="MYTABLE">
+      <td class="MYTABLE"></td>
+      <td align="right" class="MYTABLE"> SSN/DL</td>
+      <td><input type="text" name="pid" id="pid" value=""/></td>
+    </tr>
+    <tr class="MYTABLE">
+      <td class="MYTABLE"></td>
+      <td align="right" class="MYTABLE">PhotoId</td>
+      <td><input type="FILE" name="photoid" id="photoid" value="UPLOAD"/></td>
+    </tr>
+    <tr class="MYTABLE" height="40px">
+      <td class="MYTABLE"></td>
+      <td align="right" class="MYTABLE"></td>
+        
+      <td><input type="submit"  name="SUBMIT" id="SUBMIT" value="SUBMIT"/></td>
+    </tr>
+  </table>
+</FORM>
+
+</body>
+</html>

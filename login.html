@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ANP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="Money Transfer in toronto canada" />
+<meta name="keywords" content=" toronto,canada" />
+<link href='style/style.css' rel='stylesheet' type='text/css' />
+<script language="JavaScript" type="text/javascript" src="ajax_suggest.js"></script>
+
+<script language="javascript" type="text/javascript">
+function checkFields()
+{
+
+var username = document.getElementById('username').value;
+var pwd = document.getElementById('password').value;
+	if (username.length < 6)
+	{   
+		alert("invalid username ");
+		document.getElementById('username').focus();
+		return false;
+	}
+	if (pwd.length < 6)
+	{
+		alert("invalid password ");
+		return false;
+	}
+return true;	
+}
+</script>
+</head>
+<body>
+<FORM  ACTION="login.php" METHOD="POST">
+
+  <table width="250" align="center" class="MYTABLE" valign="middle" >
+    <caption class="MYTABLE">
+STAFF LOGIN
+    </caption>
+    <tr class="MYTABLE">
+    
+      <td width="101"></td>
+      <td width="140" height="113" align="right" valign="middle" class="MYTABLE"><label class="MYTABLE">Username* &nbsp;</label></td>
+      <td width="61"></td>
+      <td width="276" align="left"><input type="text" name="username" id="username" autocomplete="off" value=""/></td>
+    </tr>
+    <tr class="MYTABLE">
+      <TD></TD>
+      <td height="91" align="right" class="MYTABLE"><label class="MYTABLE">Password* &nbsp;</label></td>
+      <td></td>
+      <td align="left"><input type="password" name="password" id="password" autocomplete="off" value=""/></td>
+    </tr>
+    <tr class="MYTABLE" height="40px">
+     <TD></TD>
+      <td height="86" align="right" class="MYTABLE">
+      <!--<a href="registerStaff.html"><input type="button"  name="register" id="register" value="REGISTER"/></a>--></td>
+      <td><input type="submit"  name="submit" id="submit" value="SUBMIT" onclick= "return checkFields();"/></td>
+        
+      <td align="left" valign="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    
+    <tr class="MYTABLE" height="40px"></tr>
+</table>
+</FORM>
+
+</body>
+</html>

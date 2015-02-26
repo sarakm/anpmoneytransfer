@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ANP</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="Money Transfer in toronto canada" />
+<meta name="keywords" content=" toronto,canada" />
+<link href='style/style.css' rel='stylesheet' type='text/css' />
+<script language="JavaScript" type="text/javascript" src="ajax_suggest.js"></script>
+
+<script language="javascript">
+
+function load_image()
+{
+var imgpath = document.getElementById('photoid').value;
+
+if(imgpath != "")
+{
+// code to get File Extension..
+var arr1 = new Array;
+arr1 = imgpath.split("\\");
+alert(arr1);
+var len = arr1.length;
+var img1 = arr1[len-1];
+var filext = img1.substring(img1.lastIndexOf(".")+1);
+// Checking Extension
+if(filext == "jpg" || filext == "jpeg" || filext == "gif" || filext == "bmp")
+{document.getElementById('photoid').value = imgpath;
+return true;
+}
+else
+{
+alert("Invalid File Format Selected");
+document.getElementById('photoid').value = "";
+return false;
+}
+
+}
+
+}
+</script>
+</head>
+<body>
+<FORM enctype="multipart/form-data"  ACTION="testit.php" METHOD="POST">
+<input type="text" name="custname" id="custname" value=""/>
+<input type="FILE" name="file" id="file" value=""/>
+
+      <label>&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="submit"  name="SUBMIT" id="SUBMIT" value="SUBMIT" onClick= "return checkFields();"/>
+</FORM></body>
+</html>
